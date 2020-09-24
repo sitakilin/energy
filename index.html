@@ -6,8 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -27,26 +26,26 @@
             <div class="collapse navbar-collapse col-12 col-md-10  col-lg-9" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto menu d-flex justify-content-between col-8">
                     <li class="nav-item">
-                        <a href="#">О нас</a>
+                        <a href="#title">О нас</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Каталог товаров</a>
+                        <a href="#energy">Каталог товаров</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Портфолио</a>
+                        <a href="#project">Портфолио</a>
                     </li>
                     <li class="nav-item">
-                        <a  href="#">Контакты</a>
+                        <a  href="#footer">Контакты</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Еще
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Наш продукт</a>
-                            <a class="dropdown-item" href="#">Примеры робот</a>
+                            <a class="dropdown-item" href="#calculator">Наш продукт</a>
+                            <a class="dropdown-item" href="#news">Примеры робот</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Акции</a>
+                            <a class="dropdown-item" href="#sales">Акции</a>
                         </div>
                     </li>
 
@@ -75,11 +74,11 @@
         <div class="carousel-inner">
             <div class="carousel-item active ">
                 <div class="slider row">
-                    <div class="container offset-2 col-6">
+                    <div id="title" class="container offset-2 col-6">
                         <h2>Чистая Энергия</h2>
                         <h1>СОЛНЕЧНЫЕ ПАНЕЛИ</h1>
                         <p>с доставкой по всей Украине</p>
-                        <a href="#">Узнать больше</a>
+                        <a class="link" href="#">Узнать больше</a>
                     </div>
                 </div>
             </div>
@@ -89,7 +88,7 @@
                         <h2>Чистая Энергия</h2>
                         <h1>СОЛНЕЧНЫЕ ПАНЕЛИ</h1>
                         <p>с доставкой по всей Украине</p>
-                        <a href="#">Узнать больше</a>
+                        <a class="link" href="#">Узнать больше</a>
                     </div>
                 </div>
             </div>
@@ -99,32 +98,279 @@
                         <h2>Чистая Энергия</h2>
                         <h1>СОЛНЕЧНЫЕ ПАНЕЛИ</h1>
                         <p>с доставкой по всей Украине</p>
-                        <a href="#">Узнать больше</a>
+                        <a class="link" href="#">Узнать больше</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="calculator">
+<section class="calculator" id="calculator">
     <div class="container">
-        <h3>Калькулятор расчета электростанции</h3>
+        <h3 class="title_section">Калькулятор расчета электростанции</h3>
         <p class="sub_title">Расчет генерации энергии солнечной электростанцией</p>
-        <div class="row justify-content-around">
-            <div class="col-12 col-sm-6">
-                <div class="calculator_block">
+        <div class="row calculator-mas">
+            <div class=" col-12 col-sm-6">
+                <div class="calculator_block ">
                     <h4>Исходные данные</h4>
                     <p>Впишите желаемую мощность солнечной электростанции (кВт)
                         и среднее потребление электроэнергии (кВт/мес)</p>
+                    <form method="post" action="#">
+                        <label for="kb" >Мощность
+                            электростанции
+                        </label>
+                        <input id="kb" type="text">
+                        <span class="kbt">kBt.</span>
+                        <label for="kbt">Среднее потребление
+                            электроэнергии</label>
+                        <input id="kbt" type="text">
+                        <span>kBt/mec.</span>
+                    </form>
                 </div>
             </div>
             <div class="col-12 col-sm-6">
-                <div class="calculator_block">
+                <div class="calculator_block green_block">
+                    <h4>Расчетные данные</h4>
+                    <div class="info_kb_title">
+                        <div class="info_kb">
+                            <span>8</span>
+                            <p>Количество панелей, шт.</p>
+                        </div>
+                        <div class="info_kb">
+                            <span>13</span>
+                            <p>Генерация, кВт/год</p>
+                        </div>
+                        <div class="info_kb">
+                            <span>2300</span>
+                            <p>Площадь станции, м.кв</p>
+                        </div>
+                        <div class="info_kb">
+                            <span>8434</span>
+                            <p>Ежегодный заработок
+                                по <span>зеленому тарифу, грн</span></p>
+                        </div>
+                    </div>
+                    <p>* при расчете учтен налог на доход в размере 19.5 %</p>
+                </div>
+                <div class="array">
+
                 </div>
             </div>
 
         </div>
+        <p class="sub_title_calculator">Более точный просчет, подбор оборудования
+            и формирование стоимости необходимой солнечной электростанции
+            помогут рассчитать наши менеджеры.</p>
+        <a class="link" href="#">Получить консультацию</a>
     </div>
 </section>
+<section class="project" id="energy">
+    <div class="container">
+        <h3 class="title_section">Мы предоставляем энергию</h3>
+        <p class="sub_title sub">Для многих клиентов, в числе которых государственные здания, частные дома и офисы</p>
+        <div class="row project_all justify-content-between">
+
+            <div class="project_item col-12 col-m-6">
+                <div>
+                    <img src="images/project.jpg" alt="battery">
+                    <h5>Госпроекты</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div class="line"></div>
+                </div>
+
+            </div>
+            <div class="project_item col-12 col-m-6">
+                <div class="active_div">
+                    <img class="active_img" src="images/project.jpg" alt="battery">
+                    <h5>Офисы</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+
+            </div>
+            <div class="project_item col-12 col-m-6">
+                <div>
+                    <img src="images/project.jpg" alt="battery">
+                    <h5>Частные дома</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div class="line"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="world">
+    <h3 class="title_white">Спасем планету!</h3>
+    <p class="sub_title_white">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
+</section>
+<section class="advantages">
+    <div class="container">
+        <h3 class="title_section">Наши преимущества</h3>
+        <p class="sub_title sub">Вступите с нами в новый век инновационных технологий</p>
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4 icon_item">
+                <div class="img_icon one"></div>
+                <h5>Лучшие услуги</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 icon_item">
+                <div class="img_icon two"></div>
+                <h5>Безграничная энергия</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 icon_item">
+                <div class="img_icon tree"></div>
+                <h5>Безграничная энергия</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 icon_item">
+                <div class="img_icon for"></div>
+                <h5>Безграничная энергия</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 icon_item">
+                <div class="img_icon five"></div>
+                <h5>Безграничная энергия</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 icon_item">
+                <div class="img_icon six"></div>
+                <h5>Безграничная энергия</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="project_last" id="project">
+    <div class="container">
+        <h3 class="title_white">Последние проекты</h3>
+        <p class="sub_title_white">Все наши проекты персонально разрабатываются для каждого отдельного клиента
+            с наивысшим уровнем качества</p>
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4 project_all_last">
+                <div class="project_last_item">
+                    <img src="images/projrct_one.jpg" alt="energy">
+                    <h6>Проект 1</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit aliqua. </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 project_all_last">
+                <div class="project_last_item">
+                    <img src="images/projrct_two.jpg" alt="energy">
+                    <h6 class="active_img_project">Длинное название проекта</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit aliqua. </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 project_all_last">
+                <div class="project_last_item">
+                    <img src="images/projrct_tree.jpg" alt="energy">
+                    <h6>Еще один проект</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit aliqua. </p>
+                </div>
+            </div>
+        </div>
+        <a class="link" href="#">Посмотреть больше проектов</a>
+    </div>
+</section>
+<section class="news" id="news">
+    <div class="container">
+        <h3 class="title_section">Последние новости</h3>
+        <p class="sub_title sub">Для многих клиентов, в числе которых государственные здания, частные дома и офисы</p>
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4 project_all_last">
+                <div class="project_last_item">
+                    <img src="images/news_one.jpg" alt="energy">
+                    <div class="shadow">
+                        <h6 class="active_img_project">Новые системы солнечных батарей</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <span>28 август</span>
+                        <a href="#">Читать далее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 project_all_last">
+                <div class="project_last_item">
+                    <img src="images/news_two.jpg" alt="energy">
+                    <div class="shadow">
+                        <h6>Новые системы солнечных батарей</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <span>28 август</span>
+                        <a href="#">Читать далее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 project_all_last">
+                <div class="project_last_item">
+                    <img src="images/news_tree.jpg" alt="energy">
+                    <div class="shadow">
+                        <h6>Новые системы солнечных батарей</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <span>28 август</span>
+                        <a href="#">Читать далее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="form_green" id="sales">
+    <div class="container">
+        <h3 class="title_white">Присоединяйтесь к нам</h3>
+        <p class="sub_title_white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <form action="#" method="post">
+            <input type="text" placeholder="Ваше Имя">
+            <input type="email" placeholder="Ваша почта">
+            <a class="link" href="#">Подписаться</a>
+        </form>
+    </div>
+</section>
+<footer id="footer">
+    <div class="container">
+        <div class="row mass">
+            <div class="col-12 col-xl-3">
+                <h6 class="title_footer_act">Leader NRG Ukraine</h6>
+                <p class="text_footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="col-12 col-xl-3 offset-1">
+                <h6>Наши контакты</h6>
+                <p><span>Телефон: </span>+380 066 40 763</p>
+                <p><span>Email: </span>solarcm@mail.com</p>
+                <p><span>Адрес: </span>г.Харьков ул. Металиста 29</p>
+            </div>
+            <div class="col-10 col-xl-4 offset-1">
+                <h6>Подписка</h6>
+                <form class="clearfix" action="#" method="post">
+                    <span class="title_form">
+                        Подпишись на рассылку
+                    </span>
+                    <input type="text" placeholder="Ваша почта">
+                    <input type="submit" value="ok">
+                </form>
+            </div>
+
+        </div>
+        <div class="string">
+            <div class="row justify-content-center">
+                <ul class="col-4">
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог товаров</a>
+                    </li>
+                    <li>
+                        <a href="#">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="rights">© 2017 Все права защищены</p>
+    </div>
+</footer>
 </body>
 </html>
